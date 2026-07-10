@@ -12,6 +12,8 @@
 .header-logo {
   width: 5rem;
   border-radius: 50%;
+  height: 70px;
+  margin: 2px;
 }
 
 .search-bar {
@@ -61,7 +63,7 @@
 
 .res-logo {
   width: 100%;
-  height: 100px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }

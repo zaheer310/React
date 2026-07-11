@@ -8,13 +8,13 @@ const RestaurantCard = ({ resDetail, extraDetail }) => {
   // const restaurentObj = props.resDetail;
   const {
     id,
-    resName,
-    cuisine,
+    name,
+    cuisines,
     avgRating,
     delieveryTime,
     costForTwo,
-    imgId,
-    location,
+    cloudinaryImageId,
+    locality,
   } = resDetail;
 
   return (
@@ -22,14 +22,14 @@ const RestaurantCard = ({ resDetail, extraDetail }) => {
       <div className="res-img-container">
         <img
           className="res-logo"
-          src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imgId}`}
+          src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
           alt="res-logo"
         />
       </div>
-      <h3 className="res-title">{resName}</h3>
-      <h4>{cuisine.join(", ")}</h4>
+      <h3 className="res-title">{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
       <h4>⭐️ {avgRating} Stars</h4>
-      <h4>{extraDetail}</h4>
+      {/* <h4>{extraDetail}</h4> */}
       <h4>
         {delieveryTime} | {costForTwo}
       </h4>

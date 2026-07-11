@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const Shimmer = () =>{
+ const Shimmer = () =>{
     return (
 
         <div className="shimmer-wrapper">
@@ -152,3 +152,5 @@ export const Shimmer = () =>{
         </div>
     )
 }
+
+export default Shimmer;

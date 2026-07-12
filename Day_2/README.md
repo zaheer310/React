@@ -24,4 +24,7 @@
     - Copyright
     - Links
     - Address
-    - Contacts
+    - Contact
+
+# Routing in react
+    - npm i react-router-dom

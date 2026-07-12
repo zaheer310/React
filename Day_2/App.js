@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./src/AppLayout";
-
-
+import Contact from "./src/components/Contact";
+import About from "./src/components/About";
+import Cart from "./src/components/Cart";
+import Body from "./src/components/Body";
+import Error from "./src/components/Error";
 // const Header = () => {
 //   return (
 //     <div className="header">
@@ -337,7 +341,32 @@ import AppLayout from "./src/AppLayout";
 //   );
 // };
 
-const root = ReactDom.createRoot(document.querySelector("#root"));
-// root.render(<App />);
 
-root.render(<AppLayout/>)
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    
+    children: [
+      { path: "/",
+         element: <Body /> 
+        },
+
+      { path: "/about",
+         element: <About /> 
+        },
+
+      { path: "/contact",
+         element: <Contact />
+         },
+
+      { path: "/cart",
+         element: <Cart
+          /> },
+    ],
+    errorElement: <Error />,
+  },
+]);
+const root = ReactDom.createRoot(document.querySelector("#root"));
+root.render(<RouterProvider router={appRouter} />);

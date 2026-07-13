@@ -14,7 +14,7 @@ const Contact = () => {
         <div style={styles.infoBox}>
           <div>
             <h3 style={styles.heading}>Email</h3>
-            <p style={styles.infoText}>support@foodieexpress.com</p>
+            <p style={styles.infoText}>zaheer@foodieexpress.com</p>
           </div>
           <div>
             <h3 style={styles.heading}>Phone</h3>
@@ -33,11 +33,13 @@ const Contact = () => {
 const styles = {
   page: {
     padding: "40px 20px 70px",
-    background: "#f7fbf6",
+    background: "#6b8a63",
     minHeight: "70vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginTop: "6px",
+    borderRadius: "2%"
   },
   card: {
     maxWidth: "650px",
@@ -46,6 +48,7 @@ const styles = {
     borderRadius: "16px",
     background: "#ffffff",
     boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
+    
   },
   badge: {
     margin: 0,

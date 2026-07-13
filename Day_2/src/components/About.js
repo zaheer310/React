@@ -45,7 +45,11 @@ const About = () => {
           <p>Personalized picks and easy reordering make every meal feel easy.</p>
         </div>
       </section>
+
     </div>
+
+      
+    
   );
 };
 

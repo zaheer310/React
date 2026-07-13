@@ -1,5 +1,5 @@
 import { swiggyURL } from "../utils/constant.js";
-import {restaurantsArr, }from "../utils/mcokData.js";
+// import {restaurantsArr, }from "../utils/mcokData.js";
 import RestaurantCard from "./RestaurantCards.js";
 import  Shimmer  from "./Shimmer.js";
 import { useState, useEffect } from "react";
@@ -25,6 +25,9 @@ const Body = () => {
                 data.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
             );
 
+    //         setHotelList(
+    //   data.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
         setTimeout(() => {
     setHotelList(
       data.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
